@@ -15,7 +15,7 @@ namespace DesafioFundamentos.Models
         public void AdicionarVeiculo()
         {
             // TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
-            // *IMPLEMENTE AQUI*
+            // Done
             Console.WriteLine("Digite a placa do veículo para estacionar:");
 
             string placa = Console.ReadLine(); // Lê a placa digitada
@@ -31,7 +31,7 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para remover:");
 
             // Pedir para o usuário digitar a placa e armazenar na variável placa
-            // *IMPLEMENTE AQUI*
+            // Done
             // Lê a placa do veículo que o usuário deseja remover
             string placa = Console.ReadLine();
 
@@ -42,7 +42,7 @@ namespace DesafioFundamentos.Models
 
                 // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
-                // *IMPLEMENTE AQUI*
+                // Done
                 // Lê a quantidade de horas
                 int horas = Convert.ToInt32(Console.ReadLine());
 
@@ -50,7 +50,7 @@ namespace DesafioFundamentos.Models
                 decimal valorTotal = precoInicial + (precoPorHora * horas);
 
                 // TODO: Remover a placa digitada da lista de veículos
-                // *IMPLEMENTE AQUI*
+                // Done
 
                 // Remove o veículo da lista
                 veiculos.Remove(placa);
@@ -70,7 +70,13 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Os veículos estacionados são:");
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // *IMPLEMENTE AQUI*
+                // Done
+
+                // Percorre a lista de veículos e exibe cada placa
+                foreach (var veiculo in veiculos)
+                {
+                    Console.WriteLine(veiculo);
+                }
             }
             else
             {
